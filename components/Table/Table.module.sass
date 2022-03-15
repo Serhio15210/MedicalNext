@@ -1,0 +1,82 @@
+.tableWrapper
+    overflow: auto
+    max-height: calc(100vh - 227px)
+    position: relative
+    // padding-bottom: 50px
+    // min-height: 600px
+    .table
+        font-size: 14px
+        line-height: 20px
+        border-spacing: 0
+        width: 100%
+        box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15)
+        thead
+            th
+                position: sticky
+                top: 0
+                z-index: 1
+                font-weight: 400
+                padding: 12px 24px
+                text-align: left
+
+                color: black
+                cursor: pointer
+                font-size: 14px
+                line-height: 20px
+                height: 56px
+                word-break: keep-all
+                span
+
+                    position: relative
+
+                    img
+                        position: absolute
+                        left: 5px
+
+
+                        &:nth-child(2)
+                            display: none
+
+
+
+        tbody
+            overflow-y: auto
+            tr
+                background: #fff
+                &:nth-child(odd)
+                    background-color: white
+                td
+                    border: 1px solid #ddd
+                    border-left: 0
+                    border-right: 0
+                    padding: 12px 24px
+                    height: 56px
+                    word-break: keep-all
+                    a
+                        word-break: keep-all
+                        color: #3F51B5
+                    span
+                        word-break: keep-all
+                        cursor: pointer
+
+        &.white
+            max-height: 430px
+            thead
+                th
+                    background: #fff
+                    color: #000
+                    span
+                        img
+                            &:nth-child(1)
+                                display: none
+
+                            &:nth-child(2)
+                                display: inherit
+
+
+            tbody
+                tr
+                    background: #E8F2FF
+                    &:nth-child(even)
+                        background-color: #fff
+
